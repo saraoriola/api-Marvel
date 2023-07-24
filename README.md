@@ -80,7 +80,7 @@ MONGO_URI=&lt;your_mongodb_connection_string&gt;</code></pre>
   <p>This project is licensed under the MIT License - see the <code>LICENSE</code> file for details.</p>
 
   <h2>Author</h2>
-  <p><a href="https://github.com/yourusername">Your Name</a></p>
+  <p><a href="https://github.com/saraoriola">Sara Oriola</a></p>
 
   <h2>Acknowledgments</h2>
   <p>Special thanks to <a href="https://openai.com">OpenAI</a> for providing the GPT-3.5 language model, which helped in
