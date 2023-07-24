@@ -4,6 +4,6 @@ const router = express.Router();
 
 router.post('/', MovieController.createMovie);
 
-router.get('/get', MovieController.getAll);
+router.get('/', MovieController.getAll);
 
 module.exports = router;

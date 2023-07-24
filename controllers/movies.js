@@ -13,11 +13,12 @@ const MovieController = {
   },
   async getAll(req, res) {
     try {
-      const movies = await Movie.find();
-      res.status(200).send({ msg: "Here are all the movies", movies });
+      const movies = await Movie.find(); 
+      console.log("Movies fetched from the database:", movies); 
+      res.status(200).json(movies);
     } catch (error) {
       console.error(error);
-      res.status(500).send({ msg: "Error fetching all movies", error });
+      res.status(500).json({ error: "Error al obtener las películas" });
     }
   },
 };

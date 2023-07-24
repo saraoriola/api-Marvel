@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const moviesContainer = document.getElementById("moviesContainer");
   
     loadMoviesBtn.addEventListener("click", () => {
-      // Perform a GET request using Axios
+
       axios.get("http://localhost:3001/movies")
         .then((response) => {
-          // Process the response and display the data in the container
+
           const movies = response.data;
           const moviesList = document.createElement("ul");
   
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             moviesList.appendChild(listItem);
           });
   
-          // Clear the container before adding the updated list
+
           moviesContainer.innerHTML = "";
           moviesContainer.appendChild(moviesList);
         })
