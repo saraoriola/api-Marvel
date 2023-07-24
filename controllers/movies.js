@@ -1,7 +1,7 @@
 const Task = require("../models/Movies");
 
 const MovieController = {
-  async create(req, res) {
+  async createMovie(req, res) {
     try {
       req.body.completed = false;
       const task = await Task.create(req.body);
