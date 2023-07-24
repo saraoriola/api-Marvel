@@ -1,0 +1,60 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  .movies-list {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .movies-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .movies-list li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Optional: Add some responsive styles */
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
